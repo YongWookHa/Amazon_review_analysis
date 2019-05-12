@@ -6,13 +6,12 @@ from bs4 import BeautifulSoup
 import ssl
 import json
 
-def get_review():
+def get_review(url):
     # For ignoring SSL certificate errors
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
 
-    url=input("Enter Amazon Product Url- ")
     html = urllib.request.urlopen(url, context=ctx).read()
     soup = BeautifulSoup(html, 'html.parser')
     html = soup.prettify('utf-8')
