@@ -47,6 +47,6 @@ tensorflow==1.13.1
 tensorflow-estimator==1.13.0
 termcolor==1.1.0
 urllib3==1.24.3
-Werkzeug==0.15.2
+Werkzeug==0.15.3
 wincertstore==0.2
 wordcloud==1.5.0
